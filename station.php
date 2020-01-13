@@ -13,8 +13,15 @@
     <link rel="stylesheet" href="bla.css">
 </head>
 <body>
-    <h1>Agence de voyage</h1>
-    <a href="station.php">Afficher stations</a>
-
+    <?php
+    /************************************
+    Description: script qui se connecte au serveur de BDD et à la BD "Agence de voyage"
+    pour interroger la table station et afficher les resultats dans un tableau html.
+    Auteur: Moi
+    Version: 1.0
+    Date: 13-01-20
+    *************************************/
+     ?>
+     <h1> Les stations </h1>
 </body>
 </html>
