@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;
+}
+th {
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+td {
+    background-color: aqua;
+}

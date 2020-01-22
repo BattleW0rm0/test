@@ -8,21 +8,22 @@
 <body>
     <table>
         <tr>
-            <th>Nom de la station</th> <th>Capacité</th> <th>Lieu</th> <th>Région</th> <th>Tarif</th>
+            <th>ID</th><th>Nom</th><th>PRENOM</th><th>Ville</th><th>Region</th><th>Solde</th><th>Email</th>
         </tr>
 
 	<?php
     /***************************************************
     Nom du script : station.php
-    Description   : Script qui se connecte au serveur de base de données et à la BD "Agence_voyage" pour interoger la table "station" et afficher les résultats dans un tableau HTML
+    Description   : Script qui se connecte au serveur de base de                       données et à la BD "Agence_voyage" pour interoger                   la table "station" et afficher les résultats dans
+                     un tableau HTML
     Auteur        : M. SALL
     Version       : 1.0
     Date          : 13/01/2020
 
     ****************************************************/
 
-	echo "<h1> Les stations </h1>";
-    // CONNEXION A LA BDD
+	echo "<h1> Les clients </h1>";
+    // CONNEXTION A LA BDD
     // $serveur = 'localhost';
     // $user = 'root';
     // $passwd = '';
@@ -34,18 +35,19 @@
     if ($bdd) {
         echo "Connexion réussie";
         echo "<br>";
-        $result = mysqli_query($bdd, 'select * from station');
+        $result = mysqli_query($bdd, 'select * from client');
         if ($result) {
             while($donnees = mysqli_fetch_assoc($result)) {
                 // stocker les valeurs des champes dans des variables:
-                $name = utf8_encode($donnees['nomstation']);
-                $capacity = $donnees['capacite'];
-                $location = $donnees['lieu'];
+                $id = $donnees['id'];
+                $nom = $donnees['nom'];
+                $prenom = $donnees['prenom'];
+                $ville = $donnees['ville'];
                 $region = $donnees['region'];
-                $price = $donnees['tarif'];
+                $solde = $donnees['solde'];
+                $email = $donnees['email'];
 
-                // echo "$name $capacity $location $region $price";
-                echo "<tr><td>$name</td><td>$capacity</td><td>$location</td><td>$region</td><td>$price</td></tr>";
+                echo "<tr><td>$id</td><td>$nom</td><td>$prenom</td><td>$ville</td><td>$region</td><td>$solde</td><td>$email</td></tr></br>";
                 echo "</table>";
             }
             // mysqli_free_result($result);

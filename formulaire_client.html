@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire client</title>
+    <link rel="stylesheet" href="formulaire_station.css">
+
+</head>
+<body>
+    <h1>Insérer client</h1>
+    <form action="inserer_client.php" method="post">
+        <div class="form1">
+            <label for="zoneId">Id</label>
+            <input type="number" name="zoneId" value="zoneId" required>
+        </div>
+        <div class="form1">
+            <label for="zoneNom">Nom</label>
+            <input type="text" name="zoneNom" value="zoneNom" required>
+        </div>
+        <div class="form1">
+            <label for="zonePrenom">Prenom</label>
+            <input type="text" name="zonePrenom" value="zonePrenom" required>
+        </div>
+        <div class="form1">
+            <label for="zoneVille">Ville</label>
+            <input type="text" name="zoneVille" value="zoneVille" required>
+        </div>
+        <div class="form1">
+            <label for="zoneRegion">Region</label>
+            <input type="text" name="zoneRegion" value="zoneRegion" required>
+        </div>
+        <div class="form1">
+            <label for="zoneSolde">Solde</label>
+            <input type="number" name="zoneSolde" value="zoneSolde" required>
+        </div>
+        <div class="form1">
+            <label for="zoneEmail">Email</label>
+            <input type="email" name="zoneEmail" value="zoneEmail" required>
+        </div>
+        <div class="form1">
+            <input type="submit" value="Valider">
+        </div>
+
+    </form>
+</body>
+</html>

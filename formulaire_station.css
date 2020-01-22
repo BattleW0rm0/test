@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+}
+hr {
+    width: 400px;
+    margin-bottom: 30px;
+}
+form.form1 {
+    display: table;
+}
+div.form1 {
+    display: table-row;
+}
+label, input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+label {
+    padding-right: 10px;
+    font-weight: bold;
+}
+input:hover{
+    background-color: beige;
+}
+input:focus {
+    border: 2px solid sandybrown;
+}
+input::selection{
+    background-color: aqua;
+}
+select {
+    margin-bottom: 10px;
+}
+input, textarea, select, button {
+  width : 200px;
+  -webkit-box-sizing: border-box; /* Pour les anciennes versions des navigateurs WebKit */
+     -moz-box-sizing: border-box; /* Pour tous les navigateurs Gecko */
+          box-sizing: border-box;

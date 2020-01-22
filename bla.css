@@ -10,3 +10,14 @@ a:visited{
 a:hover{
     color: beige;
 }
+table {
+    background-color: aquamarine;
+}
+
+th {
+    background-color: aquamarine;
+}
+
+td {
+    background-color: aqua;
+}
