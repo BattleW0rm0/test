@@ -45,9 +45,9 @@
                 $price = $donnees['tarif'];
 
                 // echo "$name $capacity $location $region $price";
-                echo "<tr><td>$name</td><td>$capacity</td><td>$location</td><td>$region</td><td>$price</td></tr>";
-                echo "</table>";
+                echo "<tr><td>$name</td><td>$capacity</td><td>$location</td><td>$region</td><td>$price</td><td><a href='modifier_station.php?nomStation=$name'>Modifier</a></td></tr>";
             }
+            echo "</table>";
             // mysqli_free_result($result);
 
             /*print_r($result);

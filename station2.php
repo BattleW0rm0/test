@@ -48,8 +48,8 @@
                 $email = $donnees['email'];
 
                 echo "<tr><td>$id</td><td>$nom</td><td>$prenom</td><td>$ville</td><td>$region</td><td>$solde</td><td>$email</td></tr></br>";
-                echo "</table>";
             }
+            echo "</table>";
             // mysqli_free_result($result);
 
             /*print_r($result);
