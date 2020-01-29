@@ -21,7 +21,7 @@
 
 	/*!! Attention ne jamais faire confiance aux données envoyées par l'utilisateur */
 
-	// recuperration des données et stockage dans des variables locales
+	// recuperation des données et stockage dans des variables locales
 	$station	= utf8_decode($_POST['zoneStation']);
 	$capacity	= $_POST['zoneCapacite'];
 	$area		= utf8_decode($_POST['zoneLieu']);

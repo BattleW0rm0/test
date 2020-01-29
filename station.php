@@ -20,6 +20,12 @@
     Date          : 13/01/2020
 
     ****************************************************/
+    session_start(); // Activation de la session
+    if (!isset($_SESSION)) {
+        echo "Vous n'etes pas connectés <br>";
+        echo '<a href="connect.php">Connexion</a>';
+    }
+    else {
 
 	echo "<h1> Les stations </h1>";
     // CONNEXION A LA BDD
@@ -62,12 +68,8 @@
         die("Probleme");
     }
 
-
+}
 	?>
-
-
-
-
 
 </body>
 </html>
